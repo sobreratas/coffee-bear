@@ -98,6 +98,7 @@ body {
 
 .menu-top {
   display: flex;
+  gap: 1rem;
   padding: 2rem;
   width: 100%;
   background-color: #a1752e;
