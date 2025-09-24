@@ -80,8 +80,9 @@ body {
 
 #menu-section h2,
 #reviews-section h2,
-#contact-section {
-  font-size: 3rem;
+#contact-section h2{
+  font-size: 5rem;
+  margin-top: 5rem;
 }
 
 .menu-wrapper {
@@ -198,11 +199,6 @@ body {
   gap: 1rem;
 }
 
-#contact-section h2,
-#reviews-section h2 {
-  font-size: 3rem;
-}
-
 .contact-wrapper {
   width: 90%;
   font-size: 1.8rem;
@@ -291,10 +287,6 @@ body {
 
   #menu-section {
     margin-top: 2rem;
-  }
-
-  #menu-section h2 {
-    font-size: 3rem;
   }
 
   .menu-wrapper {
