@@ -281,6 +281,7 @@ body {
   }
 
   .photo-bar {
+    margin-top: 2rem;
     flex-direction: column;
   }
 
