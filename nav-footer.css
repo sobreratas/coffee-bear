@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&family=Oxanium:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  /* color of links */
+  color: #a76700;
+  text-decoration: none;
+}
+
+.navbar {
+  /* color of nav bar */
+  background-color: rgb(22, 22, 22);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  z-index: 999;
+  visibility: hidden;
+}
+
+.navbar h1 {
+  font-size: 1.7rem;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-text {
+  color: var(--main-color);
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* color of bars */
+  background-color: rgb(251, 251, 251);
+}
+
+/* Header Transparent Nav */
+#header-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-text-wrapper {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #a76700;
+}
+
+.logo {
+  width: 50px;
+}
+
+.lg-header-text {
+  font-size: 2rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.header-text-wrapper ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  width: 50%;
+}
+
+.header-text-wrapper ul li a {
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.header-text-wrapper ul li a:hover {
+  color: #000;
+}
+
+footer {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.icon-container {
+  font-size: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-container a {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container a:hover {
+  transform: scale(1.2);
+}
+
+footer p {
+  font-size: 0.8rem;
+}
+
+/* Button styles */
+.btn {
+  border: 1px solid #151515;
+  background-color: #a76700;
+  color: #fff;
+  width: 30%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #ffffff;
+  color: #151515;
+  border: 1px solid #151515;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    visibility: visible;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    /* color of nav menu links */
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    opacity: 0.95;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+    font-size: 1.3rem;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  /* Header Transparent Section Mobile */
+  .header-text-wrapper {
+    display: none;
+  }
+
+  .btn {
+    width: 70%;
+  }
+
+  .btn:hover {
+    border: 1px solid #151515;
+    background-color: #151515;
+    color: #fff;
+  }
+}
